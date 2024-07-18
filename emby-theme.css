@@ -1,0 +1,134 @@
+.backgroundContainer {
+  background-image: var(--background);
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+.navMenuOption {
+  border-radius: var(--rounding) !important;
+  grid-gap: 5px;
+  position: relative;
+}
+.mainDrawer-mini + .navMenuOption {
+  display: flex;
+  align-items: center;
+}
+.mainDrawer-mini + .navMenuOption + .listItemImageContainer {
+  padding-left: 7px;
+  justify-content: flex-start !important;
+}
+.navMenuOption:hover {
+  background: transparent;
+}
+.skinHeader-withBackground.headroom-scrolling {
+  background: none !important;
+  backdrop-filter: blur(10px) !important;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+}
+@media (min-width: 60em) {
+  .skinHeader-withminidrawer {
+    -webkit-margin-start: 12ch !important;
+    margin-inline-start: 12ch !important;
+  }
+}
+@media (min-width: 60em) {
+  @media (pointer: fine) {
+    .skinHeader-withfulldrawer {
+      -webkit-margin-start: 17.9em !important;
+      margin-inline-start: 17.9em !important;
+      -webkit-margin-start: calc(
+        17.9em + env(safe-area-inset-left, 0)
+      ) !important;
+      margin-inline-start: calc(
+        17.9em + env(safe-area-inset-left, 0)
+      ) !important;
+    }
+  }
+}
+.navMenuOption::not(.navMenuOption .mainDrawer.mini)::before {
+  background: var(--accent);
+  border-radius: 10px;
+  content: "";
+  display: block;
+  flex: 0 0 auto;
+  height: 1.9em;
+  opacity: 0;
+  transition: 0.2s;
+  width: 5px;
+}
+.navMenuOption-selected::not(.navMenuOption .mainDrawer.mini)::hover::before {
+  height: 2em;
+  opacity: 1;
+}
+.navMenuOption-selected::not(.navMenuOption .mainDrawer.mini)::before {
+  height: 2em;
+  opacity: 1;
+}
+.navMenuOption-selected {
+  background: transparent !important;
+}
+.navDrawerItemsContainer,
+.expanded {
+  gap: 2px;
+}
+.mainDrawer {
+  border-right: 0;
+  margin: 10px;
+  background: none !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+}
+.scrollSliderY {
+  padding: 5px;
+}
+.infoBanner {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border-radius: 15px;
+}
+.tabs-viewmenubar-backgroundcontainer {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border-radius: 15px;
+}
+.dialog {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border-radius: 15px !important;
+  box-shadow: none !important;
+}
+.scrollbuttoncontainer {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border-radius: 15px !important;
+}
+.scrollbuttoncontainer-backwards {
+  margin-left: 5px;
+}
+.navMenuOption-selected {
+  backdrop-filter: blur(10px) !important;
+  border-radius: 15px !important;
+}
+.navMenuOption::hover {
+  backdrop-filter: blur(10px) !important;
+  border-radius: 15px !important;
+}
+.mainDrawer-mini .navDrawerListItemImageContainer {
+  width: auto !important;
+}
+.pageTitleWithDefaultLogo {
+  background-image: none !important;
+}
+.pageTitleWithDefaultLogo::after {
+  content: "ModernEmby";
+}
+.pageTitle {
+  width: auto !important;
+}
+.btnPinNavDrawer {
+  margin: 0 -1.5em 0 0 !important;
+}
